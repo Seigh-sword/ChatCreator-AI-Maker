@@ -1,0 +1,41 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ChatCreator: AI Maker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="left">
+  <h2>🤖 <span id="title-name">ChatCreator AI</span></h2>
+  <input id="ai-name" placeholder="Name your AI...">
+  <button id="setNameBtn">Set AI Name</button>
+  <div id="chatbox"></div>
+  <br>
+  <input id="input" placeholder="Type a command or chat...">
+  <button id="send">Send</button>
+  <div class="code-editor" id="html-editor">
+    <h3>HTML</h3>
+    <textarea id="html-code"></textarea>
+  </div>
+  <div class="code-editor" id="js-editor">
+    <h3>JavaScript</h3>
+    <textarea id="js-code"></textarea>
+  </div>
+  <div class="code-editor" id="css-editor">
+    <h3>CSS</h3>
+    <textarea id="css-code"></textarea>
+  </div>
+</div>
+<div id="right">
+  <h3>📂 Saved Conversations</h3>
+  <div id="convoList"></div>
+  <h3>🎮 Game Maker</h3>
+  <button onclick="saveGame()">Save Game</button>
+  <button onclick="loadGame()">Load Game</button>
+  <input id="gameName" placeholder="Game name...">
+  <iframe id="game-frame"></iframe>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
